@@ -35,3 +35,20 @@ os.system('cls')
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+
+
+
+while True: 
+  a = int(input("Please enter your A value: "))
+  b = int(input("Please enter your B value: "))
+  c= int(input("Please enter your c value: "))
+  try: 
+
+    undersquare= (b**2 - 4 * a*c )**0.5
+    positive= round((-b + ((b**2 - 4 * a*c )**0.5)) / (2*a), 2)
+    negative = round((-b - ((b**2 - 4 * a*c )**0.5)) / (2*a),2 )
+    undersquare > 0 
+    print (f"The roots are {positive} and {negative}.")
+    break 
+  except: 
+    print ("There are no real roots to the equation.")
